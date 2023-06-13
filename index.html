@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <script>
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentSlide = 0;
+
+    function changeSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    changeSlide(0); // Set initial slide
+
+    setInterval(() => {
+    changeSlide(1); // Automatically change slide every few seconds
+    }, 5000);
+
+  </script>
+
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><br>Crescendo</a>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="#">Gallery</a></li>
+        <li><span>/</span></li>
+        <li><a href="#">Concert Dates</a></li>
+        <li><span>/</span></li>
+        <li><a href="#">About</a></li>
+        <li><span>/</span></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="carousel">
+    <div class="carousel-slides">
+      <div class="carousel-slide active" id="slide1">
+        <img src="img/image 1.jpg" alt="Image 1" style ="width: 100%">
+      </div>
+      <div class="carousel-slide" id="slide2">
+        <img src="img/image 2.jpg" alt="Image 2" style ="width: 100%">
+      </div>
+      <div class="carousel-slide" id="slide3">
+        <img src="img/image 3.jpg" alt="Image 3" style ="width: 100%">
+      </div>
+    </div>
+  
+    <!-- Navigation buttons -->
+    <div class="carousel-nav">
+      <button class="carousel-indicator" onclick="changeSlide(0)"></button>
+      <button class="carousel-indicator" onclick="changeSlide(1)"></button>
+      <button class="carousel-indicator" onclick="changeSlide(2)"></button>
+    </div>
+  </section>
+    
+</body>
+</html>
