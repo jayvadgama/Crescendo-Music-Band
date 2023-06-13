@@ -1,0 +1,94 @@
+body {
+  font-family: SF Pro;
+  margin: 0;
+  padding: 0;
+  background-color: #2c2c2c;
+}
+
+nav {
+  background-color: #2c2c2c00;
+  color: #ffffff;
+  height: 70px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  margin-top: 1.5rem;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  flex: 1;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide.active {
+  transform: translateX(0);
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border: none;
+  clip-path: polygon(100% 0, 100% 65%, 60% 100%, 0 100%, 0 0);
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicator.active {
+  background-color: #fe9d00;
+}
