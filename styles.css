@@ -26,6 +26,10 @@ nav {
   text-decoration: none;
 }
 
+.slash {
+  color:#515151;
+}
+
 .menu {
   list-style: none;
   margin: 0;
@@ -61,6 +65,8 @@ nav {
 }
 
 .carousel-slide {
+  opacity: 0.2;
+  filter: grayscale(100%);
   flex: 1;
   transition: transform 0.5s ease;
 }
@@ -83,7 +89,7 @@ nav {
   background-color: #ccc;
   border: none;
   clip-path: polygon(100% 0, 100% 65%, 60% 100%, 0 100%, 0 0);
-  margin: 0 5px;
+  margin: 0 8px;
   padding: 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -91,4 +97,49 @@ nav {
 
 .carousel-indicator.active {
   background-color: #fe9d00;
+}
+.carousel-content {
+  align-items: center;
+  color:#fafafa;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+.header-carousel-content {
+  margin-top: -20%;
+  font-size: 6rem;
+}
+.subHeader-carousel-content {
+  color:#fd5927;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -5%;
+  font-size: 3rem;
+}
+.subtitle-carousel-content {
+  color:#ffffff;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -5%;
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+.button-carousel-content {
+  position:absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#fafafa;
+  width: 140px;
+  height: 50px;
+  background-color:#fd5927;
+  clip-path: polygon(100% 0, 100% 70%, 85% 100%, 0 100%, 0 0);
+  border:none;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -5%;
+  font-size: 1rem;
+  margin-top: 5%;
 }
