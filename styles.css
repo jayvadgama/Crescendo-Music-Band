@@ -8,10 +8,11 @@ body {
 nav {
   background-color: #2c2c2c00;
   color: #ffffff;
-  height: 70px;
+  height: 125px;
 }
 
 .container {
+  background-color: #0a0a0a00;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,11 +22,14 @@ nav {
 }
 
 .logo a {
-  color: #ffffff;
-  font-size: 20px;
+  color: #fd5927;
+  font-size: 2.2rem;
   text-decoration: none;
 }
-
+.slogan {
+  font-size: 0.8rem;
+  margin-top: auto;
+}
 .slash {
   color:#515151;
 }
@@ -54,7 +58,8 @@ nav {
 .carousel {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
+  margin-top: -7%;
   overflow: hidden;
 }
 
@@ -108,7 +113,7 @@ nav {
   z-index: 50;
 }
 .header-carousel-content {
-  margin-top: -20%;
+  margin-top: -5%;
   font-size: 6rem;
 }
 .subHeader-carousel-content {
@@ -126,7 +131,12 @@ nav {
   font-size: 1.5rem;
   margin-top: 5%;
 }
+.button-carousel-content:hover {
+  cursor: pointer;
+  background-color: #ff8762;
+}
 .button-carousel-content {
+  cursor: pointer;
   position:absolute;
   top: 110%;
   left: 50%;
@@ -142,4 +152,11 @@ nav {
   margin-top: -5%;
   font-size: 1rem;
   margin-top: 5%;
+}
+
+.testimonial {
+  position:absolute;
+  height:500px;
+  width: 100%;
+  color:#0a0a0a;
 }
