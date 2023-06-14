@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   
   <script>
-    const slides = document.querySelectorAll('.carousel-slide');
+    const slides = document.querySelectorAll('.carousel-slides');
     let currentSlide = 0;
 
     function changeSlide(n) {
@@ -13,7 +13,7 @@
         slides[currentSlide].classList.add('active');
     }
 
-    changeSlide(0); // Set initial slide
+    changeSlide(0.1); // Set initial slide
 
     setInterval(() => {
     changeSlide(1); // Automatically change slide every few seconds
@@ -30,13 +30,13 @@
       </div>
       <ul class="menu">
         <li><a href="#">Home</a></li>
-        <li><span>/</span></li>
+        <li><span class="slash">/</span></li>
         <li><a href="#">Gallery</a></li>
-        <li><span>/</span></li>
+        <li><span class="slash">/</span></li>
         <li><a href="#">Concert Dates</a></li>
-        <li><span>/</span></li>
+        <li><span class="slash">/</span></li>
         <li><a href="#">About</a></li>
-        <li><span>/</span></li>
+        <li><span class="slash">/</span></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -44,6 +44,12 @@
   
   <section class="carousel">
     <div class="carousel-slides">
+        <div class="carousel-content">
+            <h1 class="header-carousel-content">Rhythm Revelations</h1>
+            <h1 class="subHeader-carousel-content">Moonlight Gardens</h1>
+            <h1 class="subtitle-carousel-content">Get ready to embark on a musical journey that will awaken your senses and<br>transport you to new realms of musical ecstasy.</h1>
+            <button class="button-carousel-content">Read more</button>
+        </div>
       <div class="carousel-slide active" id="slide1">
         <img src="img/image 1.jpg" alt="Image 1" style ="width: 100%">
       </div>
