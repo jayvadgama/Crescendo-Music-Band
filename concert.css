@@ -1,0 +1,45 @@
+
+.event-card2 {
+    background-color:#1a1a1a;
+    clip-path: polygon(100% 0, 100% 85%, 80% 100%, 0 100%, 0 0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+  }
+
+  .event-cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .event-subtitle {
+    color:#C7C7C7;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+    font-weight: 300;
+  }
+  
+  .ticket-price {
+    color: #C7C7C7;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .featured-celebrity {
+    color: #C7C7C7;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
