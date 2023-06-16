@@ -17,10 +17,11 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1450px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     z-index: 100;
+    
   }
   
   .logo a {
@@ -28,11 +29,17 @@ section{
     font-weight: 500;
     font-size: 2.2rem;
     text-decoration: none;
+    
+  }
+  .logo{
+    padding-left: 150px;
   }
   .slogan {
     font-size: 0.8rem;
     margin-top: auto;
     color: #767676;
+    padding-bottom: 30px;
+    
   }
   .slash {
     color: #515151;
@@ -41,7 +48,7 @@ section{
   .menu {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-right: 150px;
     display: flex;
     margin-top: 1.5rem;
   }
@@ -58,6 +65,9 @@ section{
   .menu li a:hover {
     color: #fd5927;
   }
+  .bbs{
+    background-color: #101010;
+  }
   .separator {
     height: 0.05rem;
     max-width: 1200px;
@@ -66,23 +76,29 @@ section{
     left: 50%;
     transform: translateX(-50%);
     background-color: #515151;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+.contact{
+    z-index: -1;
+    position: relative;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+    padding-top: 100px;
   }
 
-.contact{
-    background: #101010;
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    align-items: center;
-    grid-gap: 6rem;
-}
 .mapz img{
-    max-width: 100%;
-    width: 720px;
+    max-width: 80%;
+    width: 420px;
     height: auto;
     border-radius: 11px;
+   
 }
 .form h1{
     font-size: 80px;
@@ -93,7 +109,8 @@ span{
     color: #fd5927;
 }
 .form{
-    position: relative; 
+    position: relative;
+    margin: 80px; 
 }
 .form form input,
 form textarea{
@@ -105,7 +122,7 @@ form textarea{
     color: #fff;
     font-size: 1.1rem;
     margin-bottom: 0.7rem;
-    border-radius: 11px;
+   
 }
 .form textarea{
     resize: none;
@@ -120,7 +137,7 @@ form textarea{
    font-weight: 600;
    border: 2px solid transparent;
     background: #fd5927;
-    border-radius: 11px;
+   
     width: 220px;
     transition: ease .20s;
     cursor: pointer;
@@ -139,14 +156,20 @@ form textarea{
 
 /*setting the style for the footer section*/
 .details {
+     z-index: -1;
+    position: relative;
     background: #222222;
     color: #767676;
-    padding-top: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
     flex-direction: column;
     text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 100;
+    padding-top: 30Px;
 
 }
 .media img{
@@ -177,7 +200,7 @@ form textarea{
 }
 
 .news form input{
-    width: 100%;
+    width: 900PX;
     padding: 17px;
     border: none;
     outline: none;
@@ -185,7 +208,7 @@ form textarea{
     color: #fff;
     font-size: 1.1rem;
     margin-bottom: 0.7rem;
-    border-radius: 30px;
+    
 }
 
 
@@ -198,7 +221,7 @@ form textarea{
     font-weight: 600;
     border: 2px solid transparent;
      background: #fd5927;
-     border-radius: 11px;
+    
      width: 220px;
      transition: ease .20s;
      cursor: pointer;
