@@ -3,8 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
   
-  <script>
-    
+  <script>  
     const slides = document.querySelectorAll('.carousel-slides');
     let currentSlide = 0;
 
@@ -13,15 +12,16 @@
         currentSlide = (currentSlide + n + slides.length) % slides.length;
         slides[currentSlide].classList.add('active');
     }
-
     changeSlide(0.1); // Set initial slide
 
-      setInterval(() => {
+    setInterval(() => {
         changeSlide(1); 
-      }, 5000);
-    </script> -->
+    }, 5000);
+
+    </script>
   </head>
   <body>
+    
     <nav>
       <div class="container">
         <div class="logo">
@@ -40,8 +40,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <div class = "separator"></div>
   
