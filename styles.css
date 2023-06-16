@@ -46,14 +46,14 @@ nav {
   margin-top: auto;
 }
 .slash {
-  color: #515151;
+  color:#515151;
 }
 
 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display:flex;
   margin-top: 1.5rem;
 }
 
@@ -67,7 +67,7 @@ nav {
 }
 
 .menu li a:hover {
-  color: #fd5927;
+  color:#fd5927;
 }
 
 .carousel {
@@ -79,9 +79,10 @@ nav {
 }
 
 .carousel-slides {
-  display: block;
+  display:block;
   width: 100%;
   height: 100%;
+  margin-top: -2%;
 }
 
 .carousel-slide {
@@ -102,6 +103,9 @@ nav {
   transform: translateX(-50%);
 }
 
+.carousel-indicator:hover {
+  color:#fd5927;
+}
 .carousel-indicator {
   display: inline-block;
   width: 15px;
@@ -118,10 +122,11 @@ nav {
 .carousel-indicator.active {
   background-color: #fe9d00;
 }
+
 .carousel-content {
   align-items: center;
-  color: #fafafa;
-  position: absolute;
+  color:#fafafa;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -132,36 +137,36 @@ nav {
   font-size: 6rem;
 }
 .subHeader-carousel-content {
-  color: #fd5927;
+  color:#fd5927;
   font-weight: 300;
   text-align: center;
   margin-top: -5%;
   font-size: 3rem;
 }
 .subtitle-carousel-content {
-  color: #ffffff;
+  color:#ffffff;
   font-weight: 300;
   text-align: center;
   margin-top: -5%;
   font-size: 1.5rem;
   margin-top: 5%;
 }
-.button-carousel-content:hover {
+.button-carousel-content:hover, .footer__btn:hover {
   cursor: pointer;
   background-color: #ff8762;
 }
 .button-carousel-content {
   cursor: pointer;
-  position: absolute;
+  position:absolute;
   top: 110%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fafafa;
+  color:#fafafa;
   width: 140px;
   height: 50px;
-  background-color: #fd5927;
+  background-color:#fd5927;
   clip-path: polygon(100% 0, 100% 70%, 85% 100%, 0 100%, 0 0);
-  border: none;
+  border:none;
   font-weight: 300;
   text-align: center;
   margin-top: -5%;
@@ -169,12 +174,12 @@ nav {
   margin-top: 5%;
 }
 
-/* .testimonial {
-  height: 500px;
+.testimonial {
+  height:500px;
   width: 100%;
-  color: #0a0a0a;
+  color:#0a0a0a;
   z-index: -1;
-  position: static;
+  position:static;
   background-color: #141414;
   display: flex;
   align-items: center;
@@ -183,7 +188,7 @@ nav {
   margin: 0 auto;
   padding: 0 20px;
   z-index: 100;
-} */
+}
 
 .footer {
   position: relative;
@@ -192,7 +197,6 @@ nav {
   padding: 30px 30px 20px 30px;
   color: #ffffff;
   background-color: #ffffff00;
-
   max-width: 1200px;
   position: relative;
   left: 50%;
@@ -200,22 +204,22 @@ nav {
 }
 
 .footer > * {
-  flex: 1 100%;
+  flex:  1 100%;
 }
 
 .footer__addr {
+  margin-top: 2.5rem; 
   margin-right: 1.25em;
-  margin-bottom: 2em;
 }
 
-.footer__logo,
-.footer__logo2 {
+.footer__logo, .footer__logo2 {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .footer__logo2 {
-  color: #141414;
+  color:#ffffff;
+  margin-bottom: 1rem;
 }
 
 .footer__addr h2 {
@@ -225,6 +229,7 @@ nav {
 }
 
 .nav__title {
+  margin-top: 2.5rem;
   font-weight: 400;
   font-size: 15px;
 }
@@ -235,8 +240,8 @@ nav {
 }
 
 .emailInput {
-  width: 15rem;
-  height: 2.1rem;
+  width: 20rem;
+  height: 2.15rem;
   color: #fafafa;
   background-color: #353535;
   border: none;
@@ -247,8 +252,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
-  max-width: max-content;
+  height: 2.25rem;
+  max-width: 4rem;
   background-color: #fd5927;
   clip-path: polygon(100% 0, 100% 70%, 85% 100%, 0 100%, 0 0);
   color: #ffffff;
@@ -256,7 +261,8 @@ nav {
   margin: 0.6em 0;
   font-size: 1rem;
   padding: 0 1.3em;
-  margin-top: 1.5rem;
+  margin-top: -2.25rem;
+  margin-left: 16rem;
 }
 
 .footer ul {
@@ -274,14 +280,17 @@ nav {
 
 .footer__nav {
   display: flex;
-  flex-flow: row wrap;
+	flex-flow: row wrap;
 }
 
 .footer__nav > * {
   flex: 1 50%;
   margin-right: 1.25em;
+  margin-left: 7rem;
 }
-
+.nav__ul a:hover {
+  color:#fd5927;
+}
 .nav__ul a {
   color: #999;
 }
@@ -296,14 +305,10 @@ nav {
   flex-wrap: wrap;
   color: #999;
 }
-
+  
 .legal__links {
   display: flex;
   align-items: center;
-}
-
-.heart {
-  color: #2f2f2f;
 }
 
 @media screen and (min-width: 24.375em) {
@@ -316,15 +321,15 @@ nav {
   .footer__nav > * {
     flex: 1;
   }
-
+  
   .nav__item--extra {
     flex-grow: 2;
   }
-
+  
   .footer__addr {
     flex: 1 0px;
   }
-
+  
   .footer__nav {
     flex: 2 0px;
   }
