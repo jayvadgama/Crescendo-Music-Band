@@ -10,6 +10,9 @@ section {
 }
 .images img, video{
  	width:  100%; 
+	-webkit-box-shadow: -1px 3px 34px 0px rgba(253, 89, 39, 1);
+ 	-moz-box-shadow: -1px 3px 34px 0px rgba(253, 89, 39, 1);
+	box-shadow: -1px 3px 34px 0px rgba(253, 89, 39, 1);
 }	
 .gallery {
     margin-top: 2000px;
