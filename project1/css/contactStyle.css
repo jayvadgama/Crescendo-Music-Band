@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+} /*setting the style for the whole page*/
+
+section{
+    padding: 40px 15%;
+}
+
+.container {
+    z-index: -1;
+    position: relative;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 100;
+  }
+  
+  .logo a {
+    color: #fd5927;
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-decoration: none;
+  }
+  .slogan {
+    font-size: 0.8rem;
+    margin-top: auto;
+    color: #767676;
+  }
+  .slash {
+    color: #515151;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    color: #fd5927;
+  }
+  .separator {
+    height: 0.05rem;
+    max-width: 1200px;
+    z-index: 50;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #515151;
+  }
+
+.contact{
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.mapz img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 11px;
+}
+.form h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+span{
+    color: #fd5927;
+}
+.form{
+    position: relative; 
+}
+.form form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 11px;
+}
+.form textarea{
+    resize: none;
+    height: 150px;
+}
+.form form .btn{
+   
+   align-items: right;
+   font-size: 1.1rem;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   font-weight: 600;
+   border: 2px solid transparent;
+    background: #fd5927;
+    border-radius: 11px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+
+}
+.form form .btn:hover{
+    border: 2px solid #fd5927;
+    background: transparent;
+    transform: scale(1.1);
+}
+.news form .btn:hover{
+    border: none;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+/*setting the style for the footer section*/
+.details {
+    background: #222222;
+    color: #767676;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.media img{
+    max-width: 100%;
+    width: 35px;
+    height: auto;
+    border-radius: 11px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 1rem 0 3rem 0;
+    margin: 0 10px;
+    
+}
+
+.details h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-style:italic;
+    line-height: 6rem;
+}
+
+.details p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+
+.news form input{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 30px;
+}
+
+
+.news form .btn{
+   
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+     background: #fd5927;
+     border-radius: 11px;
+     width: 220px;
+     transition: ease .20s;
+     cursor: pointer;
+ 
+ }
+ .news form .btn:hover{
+     border: 2px solid #fd5927;
+     background: transparent;
+     transform: scale(1.1);
+ }
+
+@media (max-width: 1570px){
+    section {
+     padding: 80px 3%;
+     transition: .2s;
+    }
+    .form h1{
+        font-size: 60px;
+    }
+    .details h2{
+        font-size: 60px;
+    }
+ }
+ @media (max-width: 1090px){
+    .contact{
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+    .details{
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+ }
+ @media (max-width: 1000px){
+    .contact{
+       grid-template-columns: 1fr;
+    }
+   
+    .map img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+ }
